@@ -1,0 +1,4 @@
+build/*
+libsimket.a
+simket
+simket.exe
