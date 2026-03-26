@@ -16,9 +16,10 @@ PROG_NAME   = simket
 SRC_DIR     = ./src
 BUILD_DIR   = ./build
 BIN_DIR     = .
+SRC_LIST = main.cpp \
+					 QReg.cpp
 
-SRC_LIST = main.cpp 
-
+CFLAG+=-I$(SRC_DIR)/submodules/eigen
 
 SRC_LIST_TMP = $(patsubst %,./%,$(SRC_LIST))
 SRC_FULL_LIST = $(patsubst %,$(SRC_DIR)/%,$(SRC_LIST))
